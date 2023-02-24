@@ -15,7 +15,7 @@ To get started clone the repo then do a quick run of
  composer install
  ```
  
- then complete your env file with the corresponding env details
+ then complete your `.env` file with the corresponding env details
    ```env
  APP_URL="YOUR_DVWA_ROOT_URL"
  ```
