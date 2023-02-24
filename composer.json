@@ -1,0 +1,21 @@
+{
+    "name": "hichem/bruteforceblindphp",
+    "autoload": {
+        "psr-4": {
+            "Hichem\\Bruteforceblindphp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Hichem",
+            "email": "rekouanehichem@gmail.com"
+        }
+    ],
+    "require": {
+         "guzzlehttp/guzzle": "^7.0",
+        "symfony/dom-crawler": "^5.0",
+        "symfony/css-selector": "^5.4",
+        "vlucas/phpdotenv": "^5.5",
+        "larapack/dd": "^1.1"
+    }
+}
