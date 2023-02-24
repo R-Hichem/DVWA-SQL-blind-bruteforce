@@ -4,6 +4,9 @@ require 'vendor/autoload.php';
 use GuzzleHttp\Client;
 use Symfony\Component\DomCrawler\Crawler;
 
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 function consolelog($arg)
 {
     echo '===> ' . $arg . PHP_EOL;
@@ -33,7 +36,7 @@ function get_query_result($client, $sqli_blind_url, $query, ...$args)
 }
 
 // define base URL
-$BASE_URL = 'https://dvwa-g1-12.s.freebs.ovh/';
+$BASE_URL = $_ENV['APP_URL'];
 
 // create new HTTP client
 $client = new GuzzleHttp\Client([
